@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+.temp/
+test-temp/
+
+# Test output files
+test-output.json
+coverage-output.txt
+build-output.log
+
+# Environment variables
+.env
+.env.local
+
+
+# Project Plans
+project-plans
