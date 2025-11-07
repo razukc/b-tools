@@ -113,10 +113,10 @@ Current settings in `package.json`:
 - [x] Ready for users
 
 **Git status:**
-- [ ] All changes committed
-- [ ] Working directory clean
+- [x] All changes committed
+- [x] Working directory clean
 - [x] On main branch
-- [ ] Pushed to GitHub
+- [x] Pushed to GitHub
 
 **Build status:**
 - [x] Project builds successfully
@@ -131,7 +131,7 @@ Current settings in `package.json`:
 **After publishing, will you:**
 - [x] Announce on social media
 - [x] Share in communities (which ones?): X.com
-- [ ] Update personal website/portfolio
+- [x] Update personal website/portfolio
 - [x] Write a blog post
 - [x] Just make it available
 
@@ -146,12 +146,12 @@ Once you've filled out this information, we can proceed with:
    - [x] Create GitHub token (if needed)
    - [x] Create GitHub repository (if needed)
    - [x] Update package.json (if needed)
-   - [ ] Commit any pending changes
+   - [x] Commit any pending changes
 
 2. **Ready to proceed when:**
    - [x] All information above is complete
-   - [ ] All immediate actions are done
-   - [ ] You're ready to publish
+   - [x] All immediate actions are done
+   - [x] You're ready to publish
 
 ---
 
