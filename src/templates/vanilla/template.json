@@ -4,7 +4,7 @@
   "description": "A basic Chrome extension template with vanilla JavaScript, Vite, and @crxjs/vite-plugin",
   "dependencies": [],
   "devDependencies": [
-    "@crxjs/vite-plugin@^2.0.0-beta.19",
-    "vite@^5.0.0"
+    "@crxjs/vite-plugin@^2.2.1",
+    "vite@^7.2.2"
   ]
 }
