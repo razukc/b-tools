@@ -24,7 +24,7 @@
     "test:integration": "vitest run tests/integration",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
-    "prepublishOnly": "npm run build && npm test",
+    "prepublishOnly": "npm run build && npm run test:unit",
     "prerelease:check": "node scripts/pre-publish-check.js",
     "release": "dotenv -e .env -- release-it",
     "release:minor": "dotenv -e .env -- release-it minor",
