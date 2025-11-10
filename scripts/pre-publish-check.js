@@ -59,7 +59,7 @@ check('Working directory is clean', () => {
 });
 
 check('On main branch', () => {
-  const branch = run('git branch --show-current');
+  const branch = run('git symbolic-ref --short HEAD');
   return branch && branch.trim() === 'main';
 });
 
