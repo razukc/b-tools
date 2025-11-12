@@ -4,8 +4,6 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## [0.2.0](https://github.com/razukc/extn/compare/v0.1.3...v0.2.0) (2025-11-12)
-
 ### Features
 
 #### Browser Preview Development Workflow
