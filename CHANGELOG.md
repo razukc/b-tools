@@ -16,6 +16,13 @@ All notable changes to this project will be documented in this file.
 - Simplified Browser Preview documentation to focus on actual features
 - Updated template files to remove profile-related content
 
+### Planned for v0.2.1
+
+- Fix `web-ext-config.js` → `web-ext-config.mjs` references throughout documentation
+- Update directory structure diagrams to match actual generated projects
+- Comprehensive documentation review and accuracy verification
+- See `docs/reports/DOCUMENTATION_AUDIT_v0.2.1.md` for details
+
 ### Documentation
 
 - Updated main README with Browser Preview workflow
