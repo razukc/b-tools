@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This document defines the requirements for the b-tools CLI Foundation (Phase 1), which provides developers with a command-line tool to scaffold and build Chrome Manifest V3 extensions using modern tooling. The CLI will generate a vanilla JavaScript project structure with a valid manifest and build pipeline, enabling developers to create production-ready Chrome extensions without manual configuration.
+This document defines the requirements for the extn CLI Foundation (Phase 1), which provides developers with a command-line tool to scaffold and build Chrome Manifest V3 extensions using modern tooling. The CLI will generate a vanilla JavaScript project structure with a valid manifest and build pipeline, enabling developers to create production-ready Chrome extensions without manual configuration.
 
 ## Glossary
 
-- **CLI**: The b-tools command-line interface executable
+- **CLI**: The extn command-line interface executable
 - **Project**: A Chrome extension project created by the CLI
 - **Template**: A predefined project structure with boilerplate files
 - **Manifest**: The manifest.json file required by Chrome extensions (Manifest V3 format)
@@ -20,12 +20,12 @@ This document defines the requirements for the b-tools CLI Foundation (Phase 1),
 
 ### Requirement 1
 
-**User Story:** As a developer, I want to install the b-tools CLI globally or use it via npx, so that I can access the tool from any directory
+**User Story:** As a developer, I want to install the extn CLI globally or use it via npx, so that I can access the tool from any directory
 
 #### Acceptance Criteria
 
-1. WHEN a developer runs `npm install -g b-tools`, THE CLI SHALL be available globally as the `b-tools` command
-2. WHEN a developer runs `npx b-tools`, THE CLI SHALL execute without requiring global installation
+1. WHEN a developer runs `npm install -g extn`, THE CLI SHALL be available globally as the `extn` command
+2. WHEN a developer runs `npx extn`, THE CLI SHALL execute without requiring global installation
 3. THE CLI SHALL display version information when invoked with `--version` flag
 4. THE CLI SHALL display help information when invoked with `--help` flag
 5. THE CLI SHALL exit with status code 0 for successful operations and non-zero for failures
@@ -36,7 +36,7 @@ This document defines the requirements for the b-tools CLI Foundation (Phase 1),
 
 #### Acceptance Criteria
 
-1. WHEN a developer runs `b-tools create <project-name>`, THE CLI SHALL generate a complete project structure in a new directory
+1. WHEN a developer runs `extn create <project-name>`, THE CLI SHALL generate a complete project structure in a new directory
 2. THE CLI SHALL validate that the project name contains only alphanumeric characters, hyphens, and underscores
 3. IF the target directory already exists, THEN THE CLI SHALL prompt the developer for confirmation before proceeding
 4. THE CLI SHALL create all project files atomically in a temporary location and move them to the target directory upon success

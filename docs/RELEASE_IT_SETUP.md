@@ -1,6 +1,6 @@
 # release-it Setup Summary
 
-This document summarizes the release-it setup for b-tools.
+This document summarizes the release-it setup for extn.
 
 ## What Was Installed
 
@@ -183,13 +183,13 @@ Based on release-it best practices, the configuration includes:
 
 ## Comparison to Custom Implementation
 
-Instead of building custom GitHub and npm publishing features into b-tools (which would add bloat to the open-source package), release-it provides:
+Instead of building custom GitHub and npm publishing features into extn (which would add bloat to the open-source package), release-it provides:
 
 - Battle-tested release automation
 - Active maintenance and community support
 - Extensive plugin ecosystem
-- No code to maintain in b-tools
-- Works for any npm package, not just b-tools
+- No code to maintain in extn
+- Works for any npm package, not just extn
 
 ## Documentation
 

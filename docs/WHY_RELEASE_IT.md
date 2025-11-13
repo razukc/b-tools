@@ -16,9 +16,9 @@ The initial specs included:
 
 Building custom publishing features would:
 
-1. **Add bloat to b-tools**
+1. **Add bloat to extn**
    - Users don't need GitHub/npm publishing features
-   - b-tools is for building Chrome extensions, not publishing packages
+   - extn is for building Chrome extensions, not publishing packages
    - Would increase package size unnecessarily
 
 2. **Require significant maintenance**
@@ -34,7 +34,7 @@ Building custom publishing features would:
    - Community-tested solutions available
 
 4. **Scope creep**
-   - Not core to b-tools' mission
+   - Not core to extn' mission
    - Distracts from Chrome extension features
    - Adds complexity for contributors
 
@@ -81,9 +81,9 @@ Out of the box:
 - ✅ Interactive mode
 - ✅ CI/CD support
 
-#### 4. Keeps b-tools Focused
+#### 4. Keeps extn Focused
 
-b-tools remains focused on:
+extn remains focused on:
 - Chrome extension scaffolding
 - Build pipelines
 - Manifest validation
@@ -138,7 +138,7 @@ Maintainers get:
 - Plugin ecosystem
 - Regular updates
 - Security patches
-- No bloat in b-tools
+- No bloat in extn
 
 **Cons:**
 - External dependency
@@ -174,12 +174,12 @@ Maintainers get:
 
 ## Decision Factors
 
-### For b-tools Users
+### For extn Users
 
 ❌ **Don't need**: Publishing features in their Chrome extensions
 ✅ **Do need**: Fast, focused Chrome extension tooling
 
-### For b-tools Maintainers
+### For extn Maintainers
 
 ❌ **Don't want**: Maintain publishing infrastructure
 ✅ **Do want**: Focus on Chrome extension features
@@ -248,7 +248,7 @@ Maintainers get:
 
 release-it is the right choice because:
 
-1. ✅ **Keeps b-tools focused** on Chrome extensions
+1. ✅ **Keeps extn focused** on Chrome extensions
 2. ✅ **Zero maintenance burden** for publishing features
 3. ✅ **Battle-tested** by thousands of projects
 4. ✅ **Feature-rich** out of the box

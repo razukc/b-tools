@@ -11,7 +11,7 @@
 - **File:** `dist/cli/index.js`
 - **Status:** EXISTS
 - **Shebang:** `#!/usr/bin/env node` ✓
-- **Purpose:** CLI executable entry point for the b-tools command
+- **Purpose:** CLI executable entry point for the extn command
 
 ### 2. Main Entry Point ✓
 

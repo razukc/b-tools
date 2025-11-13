@@ -2,7 +2,7 @@
 
 ## Overview
 
-This report documents the cross-platform verification testing for the b-tools CLI, ensuring compatibility across Windows, macOS, and Linux operating systems.
+This report documents the cross-platform verification testing for the extn CLI, ensuring compatibility across Windows, macOS, and Linux operating systems.
 
 **Test Date:** 2025-11-07  
 **Primary Test Platform:** Windows 10/11 (win32)  
@@ -13,7 +13,7 @@ This report documents the cross-platform verification testing for the b-tools CL
 
 ✅ **All 23 cross-platform tests passed successfully**
 
-The b-tools CLI has been verified to handle cross-platform concerns correctly through comprehensive automated testing. The implementation properly uses Node.js path utilities, handles different path separators, manages line endings, resolves home directories, and sets appropriate file permissions across platforms.
+The extn CLI has been verified to handle cross-platform concerns correctly through comprehensive automated testing. The implementation properly uses Node.js path utilities, handles different path separators, manages line endings, resolves home directories, and sets appropriate file permissions across platforms.
 
 ## Requirements Coverage
 
@@ -239,7 +239,7 @@ While unlikely, these areas could theoretically have platform-specific issues:
 
 ## Conclusion
 
-The b-tools CLI has been thoroughly verified for cross-platform compatibility on Windows. The implementation correctly uses Node.js path utilities, handles different path separators, manages line endings, resolves home directories, and sets appropriate file permissions.
+The extn CLI has been thoroughly verified for cross-platform compatibility on Windows. The implementation correctly uses Node.js path utilities, handles different path separators, manages line endings, resolves home directories, and sets appropriate file permissions.
 
 **All 23 cross-platform verification tests passed successfully.**
 

@@ -8,7 +8,7 @@ Get up and running with releases in 3 minutes.
 
 1. Go to https://github.com/settings/tokens
 2. Click "Generate new token" → "Generate new token (classic)"
-3. Name it: `b-tools-releases`
+3. Name it: `extn-releases`
 4. Select scope: `repo` (Full control of private repositories)
 5. Click "Generate token"
 6. **Copy the token** (you won't see it again!)

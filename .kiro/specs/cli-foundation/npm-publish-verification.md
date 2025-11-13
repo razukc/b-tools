@@ -9,15 +9,15 @@
 ### 1. Package.json Metadata ✅
 
 **Verified Fields:**
-- ✅ name: "b-tools"
+- ✅ name: "extn"
 - ✅ version: "0.1.0"
 - ✅ description: "CLI for building Chrome extensions"
 - ✅ main: "dist/index.js"
-- ✅ bin: { "b-tools": "dist/cli/index.js" }
+- ✅ bin: { "extn": "dist/cli/index.js" }
 - ✅ type: "module"
 - ✅ files: ["dist", "README.md", "LICENSE"]
 - ✅ keywords: chrome-extension, cli, build-tool, manifest-v3, developer-tools
-- ✅ repository: https://github.com/razukc/b-tools.git
+- ✅ repository: https://github.com/razukc/extn.git
 - ✅ license: "MIT"
 
 **Scripts:**
@@ -31,11 +31,11 @@
 $ npm link
 # Successfully linked
 
-$ b-tools --version
+$ extn --version
 0.1.0
 
-$ b-tools --help
-Usage: b-tools [options] [command]
+$ extn --help
+Usage: extn [options] [command]
 CLI for building Chrome extensions
 ```
 
@@ -108,7 +108,7 @@ $ npm run build
 **Verification:**
 - ✅ LICENSE file exists at project root
 - ✅ License type: MIT
-- ✅ Copyright: 2024 b-tools
+- ✅ Copyright: 2024 extn
 - ✅ Complete MIT license text included
 
 ### 7. README Documentation ✅

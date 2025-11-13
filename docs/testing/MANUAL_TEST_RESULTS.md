@@ -277,7 +277,7 @@ To fully complete task 10.1, perform the manual testing steps above in Chrome:
 ## Conclusion
 
 The automated portion of task 10.1 has been completed successfully:
-- ✅ Test extension created using b-tools CLI
+- ✅ Test extension created using extn CLI
 - ✅ Dependencies installed successfully
 - ✅ Extension built successfully
 - ✅ Build output verified and validated

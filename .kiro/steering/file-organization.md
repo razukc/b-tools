@@ -1,6 +1,6 @@
 # File Organization Guidelines
 
-This document defines where different types of files should be placed in the b-tools project to maintain a clean and organized structure.
+This document defines where different types of files should be placed in the extn project to maintain a clean and organized structure.
 
 ## Quick Reference
 

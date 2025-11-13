@@ -81,8 +81,8 @@ manifest.json:5:2: ERROR: Expected "," in JSON but found "\"description\""
 **Error Output**:
 ```
 error during build:
-[vite:build-html] Failed to resolve popup.js from C:/Code/playground/b-tools/test-workflow-project/src/popup/popup.html
-file: C:/Code/playground/b-tools/test-workflow-project/src/popup/popup.html
+[vite:build-html] Failed to resolve popup.js from C:/Code/playground/extn/test-workflow-project/src/popup/popup.html
+file: C:/Code/playground/extn/test-workflow-project/src/popup/popup.html
 ```
 
 **Error Quality Assessment**:

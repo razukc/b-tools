@@ -58,7 +58,7 @@ npm --version   # Should be 9.0.0 or higher
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd b-tools
+cd extn
 
 # Install dependencies
 npm install
@@ -497,7 +497,7 @@ cd /tmp
 rm -rf linux-test-project
 
 # Unlink CLI (if linked)
-cd /path/to/b-tools
+cd /path/to/extn
 npm unlink
 ```
 

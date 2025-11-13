@@ -2,7 +2,7 @@
 
 ## Overview
 
-We've integrated the official Chrome Extension Manifest JSON Schema from [JSON Schema Store](https://www.schemastore.org/) into the b-tools project. This schema provides comprehensive validation rules for both Manifest V2 and V3.
+We've integrated the official Chrome Extension Manifest JSON Schema from [JSON Schema Store](https://www.schemastore.org/) into the extn project. This schema provides comprehensive validation rules for both Manifest V2 and V3.
 
 ## Files Added
 
@@ -33,7 +33,7 @@ Documentation about the schema and its usage.
 ### 4. `src/schemas/example-usage.ts`
 Example code showing how to use the schema.
 
-## How This Helps b-tools
+## How This Helps extn
 
 ### 1. **Manifest Validation (Tasks 3.x)**
 ```typescript

@@ -106,7 +106,7 @@ All `.ts` files in the `src/` directory have corresponding `.js` files in the `d
 
 ## Requirements Satisfied
 
-- ✅ **Requirement 1.1**: CLI available as `b-tools` command (bin entry point exists)
+- ✅ **Requirement 1.1**: CLI available as `extn` command (bin entry point exists)
 - ✅ **Requirement 1.2**: Proper exit codes and error handling in CLI entry point
 
 ## Conclusion

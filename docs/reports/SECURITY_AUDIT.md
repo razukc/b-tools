@@ -1,12 +1,12 @@
 # Security Audit Report
 
 **Date**: November 7, 2025  
-**Project**: b-tools v0.1.0  
+**Project**: extn v0.1.0  
 **Audit Type**: Dependency Security and Best Practices Review
 
 ## Executive Summary
 
-This security audit was performed as part of task 11.3 to ensure the b-tools CLI is secure and follows best practices before initial release. The audit covers dependency vulnerabilities, unnecessary dependencies, and security considerations.
+This security audit was performed as part of task 11.3 to ensure the extn CLI is secure and follows best practices before initial release. The audit covers dependency vulnerabilities, unnecessary dependencies, and security considerations.
 
 ## Vulnerability Assessment
 
@@ -184,7 +184,7 @@ Several dependencies have newer major versions available:
 
 **Overall Security Status**: ✅ **GOOD**
 
-The b-tools CLI follows security best practices and has no critical vulnerabilities. The 5 moderate vulnerabilities found are in development dependencies only and do not affect production functionality. All production dependencies are necessary and minimal.
+The extn CLI follows security best practices and has no critical vulnerabilities. The 5 moderate vulnerabilities found are in development dependencies only and do not affect production functionality. All production dependencies are necessary and minimal.
 
 **Recommendation**: **APPROVED FOR RELEASE**
 

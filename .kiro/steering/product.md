@@ -1,6 +1,6 @@
 # Product Overview
 
-b-tools is a TypeScript-based CLI for building Chrome extensions with modern tooling. It provides scaffolding, build pipelines, and development workflows for Manifest V3 Chrome extensions.
+extn is a TypeScript-based CLI for building Chrome extensions with modern tooling. It provides scaffolding, build pipelines, and development workflows for Manifest V3 Chrome extensions.
 
 ## Core Purpose
 

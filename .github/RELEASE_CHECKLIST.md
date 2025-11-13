@@ -1,6 +1,6 @@
 # Release Checklist
 
-Use this checklist when releasing a new version of b-tools.
+Use this checklist when releasing a new version of extn.
 
 ## Pre-Release
 
@@ -55,12 +55,12 @@ npm run release
 
 ## Post-Release Verification
 
-- [ ] GitHub release created: https://github.com/razukc/b-tools/releases
-- [ ] npm package published: https://www.npmjs.com/package/b-tools
+- [ ] GitHub release created: https://github.com/razukc/extn/releases
+- [ ] npm package published: https://www.npmjs.com/package/extn
 - [ ] Version tag pushed: `git tag -l`
 - [ ] CHANGELOG.md updated
-- [ ] Test installation: `npm install -g b-tools@latest`
-- [ ] Test basic functionality: `b-tools --version`
+- [ ] Test installation: `npm install -g extn@latest`
+- [ ] Test basic functionality: `extn --version`
 
 ## If Something Goes Wrong
 

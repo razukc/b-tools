@@ -1,7 +1,7 @@
 # Implementation Plan
 
 - [x] 1. Setup project infrastructure and TypeScript configuration
-  - Initialize npm package with proper metadata (name: b-tools, version: 0.1.0)
+  - Initialize npm package with proper metadata (name: extn, version: 0.1.0)
   - Configure TypeScript with strict mode, ES2020 target, and proper paths
   - Setup Vitest with coverage configuration (80% threshold)
   - Configure ESLint and Prettier for code quality
@@ -191,7 +191,7 @@
 
   - Create src/cli/index.ts with shebang (#!/usr/bin/env node)
   - Implement createProgram function using Commander
-  - Set program name to 'b-tools', description, and version 0.1.0
+  - Set program name to 'extn', description, and version 0.1.0
   - Add --version and --help flags
   - Configure proper exit codes (0 for success, non-zero for errors)
   - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5_
@@ -218,7 +218,7 @@
 - [x] 6.3 Implement build command handler (optional for Phase 1)
 
   - Note: Build command will be handled by Vite in generated projects via npm scripts
-  - Users run "npm run build" in their extension project, not "b-tools build"
+  - Users run "npm run build" in their extension project, not "extn build"
   - CLI only needs to generate proper vite.config.js and package.json scripts
   - If implementing CLI build wrapper: delegate to "npm run build" in project directory
   - _Requirements: 5.5, 5.6, 5.7, 6.1, 6.2, 6.3, 6.4, 6.5_
@@ -242,10 +242,10 @@
   - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 10.6, 10.7_
 
 - [x] 8.1 Configure package.json for npm publishing
-  - Set name to 'b-tools', version to 0.1.0
+  - Set name to 'extn', version to 0.1.0
   - Add description: "CLI for building Chrome extensions"
   - Set main to dist/index.js
-  - Add bin entry: "b-tools": "dist/cli/index.js"
+  - Add bin entry: "extn": "dist/cli/index.js"
   - Add files array: ["dist", "README.md", "LICENSE"]
   - Add keywords: chrome-extension, cli, build-tool, manifest-v3, developer-tools
   - Add repository URL
@@ -276,7 +276,7 @@
   - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5_
 
 - [x] 9.1 Create end-to-end test scenario
-  - Run 'b-tools create test-extension' in temp directory
+  - Run 'extn create test-extension' in temp directory
   - Run 'npm install' in generated project (installs Vite and @crxjs/vite-plugin)
   - Run 'npm run build' in generated project (uses Vite build)
   - Verify dist directory is created with proper structure
@@ -289,7 +289,7 @@
 
 - [x] 9.2 Write README with quickstart guide
   - Add project description and features
-  - Add installation instructions (npm install -g b-tools or npx)
+  - Add installation instructions (npm install -g extn or npx)
   - Add quickstart: create, install, build steps
   - Add command reference for create and build
   - Add troubleshooting section
@@ -318,10 +318,10 @@
 
 - [x] 9.4.2 Test bin entry locally with npm link
   - Run npm link in project root to create global symlink
-  - Test b-tools command is available globally
-  - Run b-tools --version and verify output
-  - Run b-tools --help and verify command list
-  - Run b-tools create test-project and verify it works
+  - Test extn command is available globally
+  - Run extn --version and verify output
+  - Run extn --help and verify command list
+  - Run extn create test-project and verify it works
   - Clean up with npm unlink
   - _Requirements: 1.1, 1.2_
 
@@ -374,11 +374,11 @@
 
 - [x] 9.4.5 Test installation from local tarball
   - Run npm pack to create tarball
-  - Install globally from tarball: npm install -g ./b-tools-0.1.0.tgz
-  - Test b-tools command works after global install
+  - Install globally from tarball: npm install -g ./extn-0.1.0.tgz
+  - Test extn command works after global install
   - Create a test project using installed version
   - Verify generated project works correctly
-  - Uninstall with npm uninstall -g b-tools
+  - Uninstall with npm uninstall -g extn
   - Clean up tarball file
   - _Requirements: 1.1, 1.2_
 
@@ -386,7 +386,7 @@
   - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5_
 
 - [x] 10.1 Manual Chrome extension testing
-  - Create a test extension using b-tools create
+  - Create a test extension using extn create
   - Install dependencies with npm install
   - Build the extension with npm run build
   - Load the extension in Chrome (chrome://extensions, enable Developer mode, Load unpacked)

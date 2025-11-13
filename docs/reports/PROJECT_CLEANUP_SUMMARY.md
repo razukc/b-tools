@@ -102,7 +102,7 @@ Created comprehensive file organization guidelines including:
 ## Final Root Directory Structure
 
 ```
-b-tools/
+extn/
 ├── .git/
 ├── .kiro/
 │   ├── specs/
@@ -198,4 +198,4 @@ b-tools/
 
 The project structure is now well-organized and documented. All files are in appropriate locations, steering documents reflect the current organization, and clear guidelines exist for maintaining this structure going forward.
 
-This cleanup ensures the b-tools project remains maintainable and professional as it grows beyond the MVP phase.
+This cleanup ensures the extn project remains maintainable and professional as it grows beyond the MVP phase.

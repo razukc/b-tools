@@ -6,7 +6,7 @@
 
 ## Test Overview
 
-This report documents the testing of the Vite development workflow for Chrome extensions created with b-tools CLI.
+This report documents the testing of the Vite development workflow for Chrome extensions created with extn CLI.
 
 ## Test Environment
 
@@ -220,7 +220,7 @@ dist/
 
 ## Conclusion
 
-The development workflow for b-tools generated Chrome extensions is **fully functional and production-ready**. The Vite + CRXJS integration provides:
+The development workflow for extn generated Chrome extensions is **fully functional and production-ready**. The Vite + CRXJS integration provides:
 
 - ✅ Fast development server startup
 - ✅ Reliable hot module replacement

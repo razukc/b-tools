@@ -3,7 +3,7 @@
 ## Directory Organization
 
 ```
-b-tools/
+extn/
 ├── src/                    # Source code (TypeScript)
 │   ├── cli/               # CLI program setup and configuration
 │   ├── commands/          # Command implementations (create, build)

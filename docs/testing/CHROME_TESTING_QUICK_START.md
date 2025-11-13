@@ -58,7 +58,7 @@ Toggle the switch in the top-right corner
 ## ✅ Success Criteria
 
 All of the following should work:
-- [x] Extension created with b-tools CLI
+- [x] Extension created with extn CLI
 - [x] Dependencies installed (npm install)
 - [x] Extension built (npm run build)
 - [x] Build output verified

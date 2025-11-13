@@ -2,7 +2,7 @@
 
 ## Test Coverage Overview
 
-The b-tools CLI has comprehensive cross-platform testing coverage across two test suites:
+The extn CLI has comprehensive cross-platform testing coverage across two test suites:
 
 ### 1. Unit Tests (tests/unit/utils/fs.test.ts)
 
@@ -130,7 +130,7 @@ Uses Node.js abstractions:
 
 ## Conclusion
 
-The b-tools CLI has **comprehensive cross-platform test coverage** with 33+ tests verifying correct behavior across different operating systems. All tests pass on Windows, and the implementation uses Node.js best practices that ensure compatibility with macOS and Linux.
+The extn CLI has **comprehensive cross-platform test coverage** with 33+ tests verifying correct behavior across different operating systems. All tests pass on Windows, and the implementation uses Node.js best practices that ensure compatibility with macOS and Linux.
 
 **Status: VERIFIED ✅**
 

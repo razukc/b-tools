@@ -2,7 +2,7 @@
 
 ## Overview
 
-The b-tools CLI Foundation is a TypeScript-based command-line tool that scaffolds Chrome Manifest V3 extension projects with a modern build pipeline. The architecture follows a modular design with clear separation between CLI interface, core business logic, template generation, and build orchestration.
+The extn CLI Foundation is a TypeScript-based command-line tool that scaffolds Chrome Manifest V3 extension projects with a modern build pipeline. The architecture follows a modular design with clear separation between CLI interface, core business logic, template generation, and build orchestration.
 
 The CLI tool uses TypeScript compilation (tsc) for simplicity and standard practice. Generated extension projects use Vite for development and production builds, providing instant HMR, optimized bundling (via Rollup), and excellent developer experience. The system uses Commander.js for CLI routing and Zod for validation. All code is written in TypeScript with comprehensive test coverage using Vitest.
 
@@ -38,7 +38,7 @@ The CLI tool uses TypeScript compilation (tsc) for simplicity and standard pract
 ### Directory Structure
 
 ```
-b-tools/
+extn/
 ├── src/
 │   ├── cli/
 │   │   ├── index.ts              # CLI entry point
@@ -129,7 +129,7 @@ export function createProgram(): Command {
   const program = new Command();
   
   program
-    .name('b-tools')
+    .name('extn')
     .description('CLI for building Chrome extensions')
     .version('0.1.0');
   
@@ -843,8 +843,8 @@ export default defineConfig({
 
 ```bash
 # Clone and install
-git clone https://github.com/browser-tools/b-tools.git
-cd b-tools
+git clone https://github.com/browser-tools/extn.git
+cd extn
 npm install
 
 # Build TypeScript
@@ -1099,12 +1099,12 @@ git push --tags
 
 ```json
 {
-  "name": "b-tools",
+  "name": "extn",
   "version": "0.1.0",
   "description": "CLI for building Chrome extensions",
   "main": "dist/index.js",
   "bin": {
-    "b-tools": "dist/cli/index.js"
+    "extn": "dist/cli/index.js"
   },
   "files": [
     "dist",
@@ -1120,7 +1120,7 @@ git push --tags
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/browser-tools/b-tools.git"
+    "url": "https://github.com/browser-tools/extn.git"
   },
   "license": "MIT"
 }

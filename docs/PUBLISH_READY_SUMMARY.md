@@ -1,6 +1,6 @@
 # Ready to Publish - Summary
 
-You now have everything you need to publish b-tools for the first time!
+You now have everything you need to publish extn for the first time!
 
 ## What We've Prepared
 
@@ -126,11 +126,11 @@ Just ask! I'm here to guide you through the entire process.
 ## Success Criteria
 
 You'll know you're successful when:
-1. ✅ Package appears on npm: https://www.npmjs.com/package/b-tools
-2. ✅ GitHub release exists: https://github.com/razukc/b-tools/releases
-3. ✅ Can install globally: `npm install -g b-tools`
-4. ✅ CLI works: `b-tools --version`
-5. ✅ Can create projects: `b-tools create test`
+1. ✅ Package appears on npm: https://www.npmjs.com/package/extn
+2. ✅ GitHub release exists: https://github.com/razukc/extn/releases
+3. ✅ Can install globally: `npm install -g extn`
+4. ✅ CLI works: `extn --version`
+5. ✅ Can create projects: `extn create test`
 
 ## Ready to Start?
 

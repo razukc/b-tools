@@ -1,6 +1,6 @@
 # Release Guide
 
-This document describes how to release new versions of b-tools using `release-it`.
+This document describes how to release new versions of extn using `release-it`.
 
 ## Prerequisites
 

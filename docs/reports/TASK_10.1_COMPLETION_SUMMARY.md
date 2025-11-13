@@ -203,7 +203,7 @@ Follow the comprehensive checklist in `MANUAL_TEST_RESULTS.md`:
 ## Conclusion
 
 The automated portion of task 10.1 has been completed successfully. The test extension has been:
-- ✅ Created using b-tools CLI
+- ✅ Created using extn CLI
 - ✅ Built with all dependencies
 - ✅ Verified for correct structure
 - ✅ Documented comprehensively

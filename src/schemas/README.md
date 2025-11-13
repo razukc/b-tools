@@ -19,7 +19,7 @@ This directory contains JSON schemas for validating Chrome extension manifest fi
 - Enum constraints for specific values
 - Field dependencies and constraints
 
-### Usage in b-tools
+### Usage in extn
 
 This schema is used for:
 

@@ -1,7 +1,7 @@
 # Test Coverage Report - Task 11.2
 
 **Date:** November 7, 2025  
-**Test Suite:** b-tools CLI Foundation  
+**Test Suite:** extn CLI Foundation  
 **Coverage Tool:** Vitest with v8 provider
 
 ## Summary
@@ -151,4 +151,4 @@ The test coverage verification confirms that all requirements are met:
 - All 210 tests pass successfully
 - Coverage gaps are intentional and documented
 
-The b-tools CLI Foundation has comprehensive test coverage that ensures reliability and maintainability for production use.
+The extn CLI Foundation has comprehensive test coverage that ensures reliability and maintainability for production use.
