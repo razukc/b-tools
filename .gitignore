@@ -26,6 +26,11 @@ npm-debug.log*
 .temp/
 test-temp/
 
+# Test projects
+test-workflow-project/
+*-test/
+*-extension/
+
 # Test output files
 test-output.json
 coverage-output.txt
