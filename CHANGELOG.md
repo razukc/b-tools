@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0](https://github.com/razukc/extn/compare/v0.2.2...v0.3.0) (2025-11-13)
+
+### Features
+
+* add React template with TypeScript support ([497c943](https://github.com/razukc/extn/commit/497c9434e43da0ef7d8bcb3a58005611528e7036))
+
 ## [0.2.2](https://github.com/razukc/extn/compare/v0.2.1...v0.2.2) (2025-11-13)
 
 ### Cleanup
