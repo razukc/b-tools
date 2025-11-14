@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0](https://github.com/razukc/extn/compare/v0.3.0...v0.4.0) (2025-11-14)
+
+### Features
+
+* add Vue 3 template with TypeScript support ([fbbdfdd](https://github.com/razukc/extn/commit/fbbdfdd281aa845e7c73c95f6faad5593bafe072))
+* upgrade React template to React 19 and latest dependencies ([029b8f8](https://github.com/razukc/extn/commit/029b8f8c1d755a5d399ee5d3947d2bc879ed0678))
+
+### Documentation
+
+* add React 19 upgrade specification and compatibility notes ([467e077](https://github.com/razukc/extn/commit/467e0775e4b43c2ff8695faff005dbbbe9839945))
+* add steering-update spec ([4b9f425](https://github.com/razukc/extn/commit/4b9f425f2099c44282c8249be805339e0523ab69))
+* add Vue template documentation ([42d38ca](https://github.com/razukc/extn/commit/42d38ca0f8e880bb5314fb2653c93fc6fc1d6101))
+* add Vue template spec with requirements, design, and tasks ([e9c3af8](https://github.com/razukc/extn/commit/e9c3af838525bda23560ac9ab65fa8f9b6bc6643))
+* update steering rules for Vue template support ([4b7e633](https://github.com/razukc/extn/commit/4b7e633f2a71c40d23c5ca8cf81ba6c476a5bdbb))
+
+### Tests
+
+* add comprehensive tests for Vue template ([8e1dd83](https://github.com/razukc/extn/commit/8e1dd830b3f032cc5fdcd8aa36dad3082afee298))
+* update tests for React 19 dependency versions ([315a16a](https://github.com/razukc/extn/commit/315a16ad4c4648fbb7fd1b3d82f458e59247dd0c))
+
 ## [0.3.0](https://github.com/razukc/extn/compare/v0.2.2...v0.3.0) (2025-11-13)
 
 ### Features
