@@ -13,7 +13,10 @@ extn/
 │   │   ├── template/     # Template engine and registry
 │   │   └── validation/   # Schema validation
 │   ├── schemas/           # JSON schemas (Chrome manifest)
-│   ├── templates/         # Project templates (vanilla, etc.)
+│   ├── templates/         # Project templates (base, vanilla, react)
+│   │   ├── base/         # Base template with Browser Preview (inherited by all)
+│   │   ├── vanilla/      # Vanilla JavaScript/TypeScript template
+│   │   └── react/        # React 18 + TypeScript template
 │   └── utils/             # Shared utilities (fs, logger, errors)
 ├── tests/                 # Test files
 │   ├── fixtures/         # Test fixtures and mock data
@@ -47,6 +50,33 @@ extn/
 - **scripts/** - Build scripts, verification scripts, and utilities
 - **docs/reports/** - Test reports, security audits, verification summaries
 - **docs/testing/** - Testing guides, manual test procedures, behavior guides
+
+### Template Organization
+
+The template system uses an inheritance pattern:
+
+- **base/** - Contains Browser Preview features inherited by all templates
+  - `files/` - Shared files (web-ext-config.mjs, partial README, etc.)
+  - `template.json` - Base configuration with dev workflow dependencies
+  
+- **vanilla/** - Extends base template
+  - `files/` - Vanilla-specific files (basic popup, content script, etc.)
+  - `template.json` - Extends base, adds vanilla-specific configuration
+  
+- **react/** - Extends base template
+  - `files/` - React-specific files (React components, tsconfig, etc.)
+  - `template.json` - Extends base, adds React dependencies and scripts
+
+**Template Configuration Files:**
+- `template.json` - Defines dependencies, scripts, and base template to extend
+- `*.template.json` - Template files with variable substitution ({{projectName}}, etc.)
+- `*.template.js` - JavaScript template files with variable substitution
+
+**Template Inheritance:**
+1. Base template provides Browser Preview workflow to all templates
+2. Specific templates (vanilla, react) extend base with framework-specific features
+3. Files are merged intelligently (package.json, .gitignore, README.md)
+4. Future templates (vue, svelte) will automatically inherit Browser Preview
 
 ### Import Patterns
 - Use `.js` extensions in imports (ES modules requirement)

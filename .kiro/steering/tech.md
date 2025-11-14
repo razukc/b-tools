@@ -21,6 +21,29 @@
 - **memfs** - In-memory file system for testing
 - **@vitest/coverage-v8** - Code coverage reporting
 
+## Template Technologies
+
+The following technologies are included in generated projects based on template choice:
+
+### React Template
+- **React 18.3+** - Modern React with hooks and concurrent features
+- **React DOM 18.3+** - React rendering for web
+- **@vitejs/plugin-react** - Vite plugin for React Fast Refresh
+- **@crxjs/vite-plugin** - Chrome extension support for Vite
+- **@testing-library/react** - React component testing utilities
+- **@types/react** - TypeScript definitions for React
+- **@types/react-dom** - TypeScript definitions for React DOM
+
+### Vanilla Template
+- **@crxjs/vite-plugin** - Chrome extension support for Vite
+- **Vite** - Build tool and dev server
+
+### Base Template (Inherited by All)
+- **web-ext** - Mozilla's CLI tool for extension development
+- **concurrently** - Run multiple commands concurrently for dev workflow
+
+**Note**: These dependencies are added to generated projects, not to the CLI itself. The CLI remains lightweight and only includes dependencies needed for scaffolding and build orchestration.
+
 ## Common Commands
 
 ```bash

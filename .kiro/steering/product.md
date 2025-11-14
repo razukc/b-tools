@@ -9,12 +9,14 @@ Simplify Chrome extension development by providing:
 - TypeScript-first development experience
 - Production-ready build pipeline
 - Manifest V3 validation and generation
+- Browser Preview workflow with auto-launch and HMR
+- Template inheritance system for consistent features
 
 ## Key Commands
 
 - `create <project-name>` - Scaffold new Chrome extension project
 - `build` - Build extension for production with minification and packaging
-- `dev` - Watch mode for development (planned)
+- `dev` - Watch mode for development
 
 ## Philosophy
 
@@ -25,4 +27,10 @@ Simplify Chrome extension development by providing:
 
 ## Current Status
 
-MVP in active development. Phase 1 (Foundation) focuses on project scaffolding and basic build pipeline with vanilla JavaScript template support.
+Version 0.3.0 released with multiple template support. The project includes:
+- Template inheritance system with base, vanilla, and react templates
+- Browser Preview workflow with auto-launch Chrome and HMR
+- Production-ready build pipeline with Vite
+- TypeScript-first development experience
+
+Future templates (Vue, Svelte) will inherit Browser Preview features automatically.

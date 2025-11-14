@@ -11,6 +11,9 @@ Use the Context7 MCP server to get up-to-date documentation and information for 
 - **extension-workshop** - Firefox extension workshop tool at context7 (https://context7.com/mozilla/extension-workshop)
 - **@crxjs/vite-plugin** - Vite plugin for Chrome extensions
 - **Vite** - Build tool and dev server
+- **React** - React library for UI components
+- **@vitejs/plugin-react** - Vite plugin for React support
+- **@testing-library/react** - React testing utilities
 - **Any other third-party packages** when you need current documentation
 
 ### Usage Pattern
@@ -64,6 +67,9 @@ Use the GitHub MCP server to access repository information, code, issues, and do
 - **mozilla/web-ext** - Mozilla's web extension CLI tool
 - **crxjs/chrome-extension-tools** - Vite plugin for Chrome extensions
 - **vitejs/vite** - Vite build tool
+- **facebook/react** - React library
+- **vitejs/vite-plugin-react** - Official React plugin for Vite
+- **testing-library/react-testing-library** - React testing utilities
 
 ## Best Practice
 
