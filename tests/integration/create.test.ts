@@ -562,7 +562,7 @@ describe('create command integration', () => {
 
         // Requirement 1.4: Verify web-ext and concurrently dependencies are included
         expect(packageJson.devDependencies).toBeDefined();
-        expect(packageJson.devDependencies['web-ext']).toBe('^8.3.0');
+        expect(packageJson.devDependencies['web-ext']).toBe('^9.1.0');
         expect(packageJson.devDependencies.concurrently).toBe('^9.1.0');
 
         // Requirement 1.5: Verify React-specific scripts are included
@@ -572,15 +572,15 @@ describe('create command integration', () => {
 
         // Requirement 1.5: Verify React-specific dependencies are included
         expect(packageJson.dependencies).toBeDefined();
-        expect(packageJson.dependencies.react).toBe('^18.3.0');
-        expect(packageJson.dependencies['react-dom']).toBe('^18.3.0');
+        expect(packageJson.dependencies.react).toBe('^19.2.0');
+        expect(packageJson.dependencies['react-dom']).toBe('^19.2.0');
 
         // Requirement 1.5: Verify React-specific devDependencies are included
         expect(packageJson.devDependencies['@crxjs/vite-plugin']).toBe('^2.2.1');
-        expect(packageJson.devDependencies['@types/chrome']).toBe('^0.0.270');
-        expect(packageJson.devDependencies['@types/react']).toBe('^18.3.0');
-        expect(packageJson.devDependencies['@types/react-dom']).toBe('^18.3.0');
-        expect(packageJson.devDependencies['@vitejs/plugin-react']).toBe('^4.3.0');
+        expect(packageJson.devDependencies['@types/chrome']).toBe('^0.1.28');
+        expect(packageJson.devDependencies['@types/react']).toBe('^19.2.0');
+        expect(packageJson.devDependencies['@types/react-dom']).toBe('^19.2.0');
+        expect(packageJson.devDependencies['@vitejs/plugin-react']).toBe('^5.1.0');
         expect(packageJson.devDependencies.typescript).toBe('^5.6.0');
         expect(packageJson.devDependencies.vite).toBe('^7.2.2');
 
@@ -858,14 +858,14 @@ describe('create command integration', () => {
         
         // Requirement 7.5: Verify React-specific content is included
         expect(readme).toContain('# ' + projectName);
-        expect(readme).toContain('React 18');
+        expect(readme).toContain('React 19');
         expect(readme).toContain('TypeScript');
         expect(readme).toContain('Vite');
         expect(readme).toContain('Manifest V3');
         
         // Verify React-specific features section
         expect(readme).toContain('## Features');
-        expect(readme).toContain('⚛️ React 18');
+        expect(readme).toContain('⚛️ React 19');
         expect(readme).toContain('📘 TypeScript');
         expect(readme).toContain('⚡ Vite-powered build system');
         expect(readme).toContain('🔧 Modern development workflow with Browser Preview');
@@ -1097,7 +1097,7 @@ describe('create command integration', () => {
 
         // Verify web-ext and concurrently dependencies are included
         expect(packageJson.devDependencies).toBeDefined();
-        expect(packageJson.devDependencies['web-ext']).toBe('^8.3.0');
+        expect(packageJson.devDependencies['web-ext']).toBe('^9.1.0');
         expect(packageJson.devDependencies.concurrently).toBe('^9.1.0');
 
         // Verify Vue-specific scripts are included
@@ -1113,11 +1113,16 @@ describe('create command integration', () => {
 
         // Verify Vue-specific devDependencies are included
         expect(packageJson.devDependencies['@crxjs/vite-plugin']).toBe('^2.2.1');
-        expect(packageJson.devDependencies['@types/chrome']).toBe('^0.0.270');
-        expect(packageJson.devDependencies['@vitejs/plugin-vue']).toBe('^5.2.0');
+        expect(packageJson.devDependencies['@types/chrome']).toBe('^0.1.28');
+        expect(packageJson.devDependencies['@vitejs/plugin-vue']).toBe('^6.0.1');
+        expect(packageJson.devDependencies['@vitejs/plugin-vue-jsx']).toBe('^5.1.1');
         expect(packageJson.devDependencies.typescript).toBe('^5.6.0');
         expect(packageJson.devDependencies.vite).toBe('^7.2.2');
-        expect(packageJson.devDependencies['vue-tsc']).toBe('^2.1.0');
+        expect(packageJson.devDependencies['vue-tsc']).toBe('^3.1.3');
+        expect(packageJson.devDependencies['@vue/test-utils']).toBe('^2.4.0');
+        expect(packageJson.devDependencies['@vitest/ui']).toBe('^4.0.9');
+        expect(packageJson.devDependencies.jsdom).toBe('^27.2.0');
+        expect(packageJson.devDependencies.vitest).toBe('^4.0.9');
 
         // Verify package.json structure
         expect(packageJson.name).toBe(projectName);

@@ -254,7 +254,7 @@ describe('TemplateRegistry', () => {
 
       expect(baseTemplate?.devDependencies).toBeDefined();
       expect(Array.isArray(baseTemplate?.devDependencies)).toBe(true);
-      expect(baseTemplate?.devDependencies).toContain('web-ext@^8.3.0');
+      expect(baseTemplate?.devDependencies).toContain('web-ext@^9.1.0');
       expect(baseTemplate?.devDependencies).toContain('concurrently@^9.1.0');
     });
 
@@ -313,7 +313,7 @@ describe('TemplateRegistry', () => {
       const mergedTemplate = registry.getWithBase('vanilla');
 
       expect(mergedTemplate?.devDependencies).toBeDefined();
-      expect(mergedTemplate?.devDependencies).toContain('web-ext@^8.3.0');
+      expect(mergedTemplate?.devDependencies).toContain('web-ext@^9.1.0');
       expect(mergedTemplate?.devDependencies).toContain('concurrently@^9.1.0');
       expect(mergedTemplate?.devDependencies).toContain('@crxjs/vite-plugin@^2.2.1');
       expect(mergedTemplate?.devDependencies).toContain('vite@^7.2.2');
@@ -468,11 +468,12 @@ describe('TemplateRegistry', () => {
       expect(vueTemplate?.devDependencies).toBeDefined();
       expect(Array.isArray(vueTemplate?.devDependencies)).toBe(true);
       expect(vueTemplate?.devDependencies).toContain('@crxjs/vite-plugin@^2.2.1');
-      expect(vueTemplate?.devDependencies).toContain('@types/chrome@^0.0.270');
-      expect(vueTemplate?.devDependencies).toContain('@vitejs/plugin-vue@^5.2.0');
+      expect(vueTemplate?.devDependencies).toContain('@types/chrome@^0.1.28');
+      expect(vueTemplate?.devDependencies).toContain('@vitejs/plugin-vue@^6.0.1');
+      expect(vueTemplate?.devDependencies).toContain('@vitejs/plugin-vue-jsx@^5.1.1');
       expect(vueTemplate?.devDependencies).toContain('typescript@^5.6.0');
       expect(vueTemplate?.devDependencies).toContain('vite@^7.2.2');
-      expect(vueTemplate?.devDependencies).toContain('vue-tsc@^2.1.0');
+      expect(vueTemplate?.devDependencies).toContain('vue-tsc@^3.1.3');
     });
 
     it('should load vue template with correct scripts', () => {
@@ -499,14 +500,14 @@ describe('TemplateRegistry', () => {
 
       expect(mergedTemplate?.devDependencies).toBeDefined();
       // Base dependencies
-      expect(mergedTemplate?.devDependencies).toContain('web-ext@^8.3.0');
+      expect(mergedTemplate?.devDependencies).toContain('web-ext@^9.1.0');
       expect(mergedTemplate?.devDependencies).toContain('concurrently@^9.1.0');
       // Vue dependencies
       expect(mergedTemplate?.devDependencies).toContain('@crxjs/vite-plugin@^2.2.1');
-      expect(mergedTemplate?.devDependencies).toContain('@vitejs/plugin-vue@^5.2.0');
+      expect(mergedTemplate?.devDependencies).toContain('@vitejs/plugin-vue@^6.0.1');
       expect(mergedTemplate?.devDependencies).toContain('typescript@^5.6.0');
       expect(mergedTemplate?.devDependencies).toContain('vite@^7.2.2');
-      expect(mergedTemplate?.devDependencies).toContain('vue-tsc@^2.1.0');
+      expect(mergedTemplate?.devDependencies).toContain('vue-tsc@^3.1.3');
     });
 
     it('should merge dependencies from base and vue', () => {
@@ -562,7 +563,7 @@ describe('TemplateRegistry', () => {
       expect(reactTemplate).toBeDefined();
       expect(reactTemplate?.id).toBe('react');
       expect(reactTemplate?.name).toBe('React');
-      expect(reactTemplate?.description).toContain('React 18');
+      expect(reactTemplate?.description).toContain('React 19');
     });
 
     it('should load react template with extends field', () => {
@@ -577,8 +578,8 @@ describe('TemplateRegistry', () => {
 
       expect(reactTemplate?.dependencies).toBeDefined();
       expect(Array.isArray(reactTemplate?.dependencies)).toBe(true);
-      expect(reactTemplate?.dependencies).toContain('react@^18.3.0');
-      expect(reactTemplate?.dependencies).toContain('react-dom@^18.3.0');
+      expect(reactTemplate?.dependencies).toContain('react@^19.2.0');
+      expect(reactTemplate?.dependencies).toContain('react-dom@^19.2.0');
     });
 
     it('should load react template with correct devDependencies', () => {
@@ -587,10 +588,10 @@ describe('TemplateRegistry', () => {
       expect(reactTemplate?.devDependencies).toBeDefined();
       expect(Array.isArray(reactTemplate?.devDependencies)).toBe(true);
       expect(reactTemplate?.devDependencies).toContain('@crxjs/vite-plugin@^2.2.1');
-      expect(reactTemplate?.devDependencies).toContain('@types/chrome@^0.0.270');
-      expect(reactTemplate?.devDependencies).toContain('@types/react@^18.3.0');
-      expect(reactTemplate?.devDependencies).toContain('@types/react-dom@^18.3.0');
-      expect(reactTemplate?.devDependencies).toContain('@vitejs/plugin-react@^4.3.0');
+      expect(reactTemplate?.devDependencies).toContain('@types/chrome@^0.1.28');
+      expect(reactTemplate?.devDependencies).toContain('@types/react@^19.2.0');
+      expect(reactTemplate?.devDependencies).toContain('@types/react-dom@^19.2.0');
+      expect(reactTemplate?.devDependencies).toContain('@vitejs/plugin-react@^5.1.0');
       expect(reactTemplate?.devDependencies).toContain('typescript@^5.6.0');
       expect(reactTemplate?.devDependencies).toContain('vite@^7.2.2');
     });
@@ -617,11 +618,11 @@ describe('TemplateRegistry', () => {
 
       expect(mergedTemplate?.devDependencies).toBeDefined();
       // Base dependencies
-      expect(mergedTemplate?.devDependencies).toContain('web-ext@^8.3.0');
+      expect(mergedTemplate?.devDependencies).toContain('web-ext@^9.1.0');
       expect(mergedTemplate?.devDependencies).toContain('concurrently@^9.1.0');
       // React dependencies
       expect(mergedTemplate?.devDependencies).toContain('@crxjs/vite-plugin@^2.2.1');
-      expect(mergedTemplate?.devDependencies).toContain('@vitejs/plugin-react@^4.3.0');
+      expect(mergedTemplate?.devDependencies).toContain('@vitejs/plugin-react@^5.1.0');
       expect(mergedTemplate?.devDependencies).toContain('typescript@^5.6.0');
       expect(mergedTemplate?.devDependencies).toContain('vite@^7.2.2');
     });
@@ -632,8 +633,8 @@ describe('TemplateRegistry', () => {
       expect(mergedTemplate?.dependencies).toBeDefined();
       expect(Array.isArray(mergedTemplate?.dependencies)).toBe(true);
       // React dependencies
-      expect(mergedTemplate?.dependencies).toContain('react@^18.3.0');
-      expect(mergedTemplate?.dependencies).toContain('react-dom@^18.3.0');
+      expect(mergedTemplate?.dependencies).toContain('react@^19.2.0');
+      expect(mergedTemplate?.dependencies).toContain('react-dom@^19.2.0');
     });
 
     it('should merge scripts from base and react', () => {
@@ -665,7 +666,7 @@ describe('TemplateRegistry', () => {
 
       expect(reactTemplate).toBeDefined();
       expect(reactTemplate?.name).toBe('React');
-      expect(reactTemplate?.description).toContain('React 18');
+      expect(reactTemplate?.description).toContain('React 19');
     });
   });
 });
